@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <title>Frontend Mentor | devjobs-web-app</title>
+    <script src="./data.js" defer></script>
+    <script src="./create-node.js" defer></script>
+    <script src="./index.js" defer></script>
+    <script src="./advertisment.js" defer></script>
+    <script src="./searchButton.js" defer></script>
+    <script src="./modal.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="./index.html"> <img src="./assets/desktop/logo.svg" alt="" /></a>
+      <div class="switch-input">
+        <img src="./assets/desktop/icon-sun.svg" alt="" />
+        <div class="switch">
+          <input type="checkbox" name="page" id="switch" />
+          <label for="switch">
+            <span></span>
+          </label>
+        </div>
+        <img src="./assets/desktop/icon-moon.svg" alt="" />
+      </div>
+    </header>
+
+    <div class="filter">
+      <button><img src="./assets/desktop/icon-search.svg" /></button>
+      <input
+        type="text"
+        name="page"
+        id="filter"
+        placeholder="Filter by title..."
+      />
+      <img class="filterImg" src="./assets/mobile/icon-filter.svg" />
+      <div class="filter-location">
+        <img src="./assets/desktop/icon-location.svg" alt="" />
+        <input
+          type="text"
+          name="page"
+          id="location-top"
+          placeholder="Filter by location..."
+        />
+      </div>
+
+      <div class="filter-check">
+        <input type="checkbox" name="pages" id="fulltime" />
+        <label for="full-time">
+          <p>Full Time Only</p>
+        </label>
+      </div>
+
+      <button class="searchButtons">Search</button>
+    </div>
+    <main></main>
+    <div class="toast" id="My-toast">
+      <div class="warning">
+        <h5>There is no result for your search!</h5>
+      </div>
+      <a href="./index.html"><button class="toastBtn">OK</button></a>
+    </div>
+
+    <div class="overlay">
+      <div id="myModal" class="modal">
+        <div class="modalButton">
+          <div class="modal-input-two">
+            <img src="./assets/desktop/icon-location.svg" alt="" />
+            <input
+              type="text"
+              name="page"
+              id="location"
+              placeholder="Filter by location..."
+            />
+          </div>
+          <div class="modal-input">
+            <input type="checkbox" name="pages" id="fulltime" />
+            <label for="full-time">
+              <p>Full Time Only</p>
+            </label>
+          </div>
+          <button class="searchButtons">Search</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
